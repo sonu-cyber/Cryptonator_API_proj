@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My HTML Page</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"/>
+        <link rel="stylesheet" type="text/css" title="Cool stylesheet" href="style.css">
+    </head>
+      <body>
+        <script src="app.js" defer></script>
+        <header>
+          <h1>Bit Coin Page</h1>
+        </header>
+        <nav>
+          <ul>
+            <li><a href="#menu">Menu</a>
+              <select hidden>
+                <option>Market</option>
+                <option>Markets</option>
+              </select>
+            </li>
+              <li><a href="#search">Search</a></li>
+              <li><a href="#markets">Markets</a></li>
+              <select hidden>
+                <option selected><a href="#">Market</a></option>
+                <option><a href="#">Price</a></option>
+                <option><a href="#">Volume</a></option>
+              </select>
+            </li>
+            <li><a href="#market">Market</a>
+              <select hidden>
+                <option><a href="bit_stamp" selected>Bitstamp</a></option>
+                <option><a href="bit_rex">Bittrex<</a></option>
+                <option><a href="cex">Cex.io</a></option>
+                <option><a href="coin_base">Coinbase Pro</a></option>
+                <option><a href="exmo">Exmo</a></option>
+                <option><a href="hit_btc">Hitbtc</a></option>
+                <option><a href="cra_ken">Craken</a></option>
+                <option><a href="yo_bit">Yo Bit</a></option>
+              </select>
+            </li>
+          </ul>
+        </nav>
+        <section>
+          <h1>Bit Coin Data</h1>
+          <div class="container">
+
+            <div class="items hidden" id="bitCoinBody"  >
+              <button class="clickable" onclick = "fetchBitCoinPrice()">Load Bit Coin Data</button>
+            </div>
+            <!-- <div id="root"></div> -->
+            <div id="demo"></div>
+            <div class="show_items hidden"></div>
+          </div>
+        </section>
+        <aside>
+          <p id ="menu">Menu</a></p>
+          <p id ="search">Search</p>
+          <p id ="market">Market</p>
+          <p id ="markets">Markets</p>
+        </aside>
+
+        <footer>
+          <p>A Simple implementation of the cryptonator API</p>
+        </footer>
+
+    </body>
+</html>

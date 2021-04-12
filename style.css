@@ -1,0 +1,214 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body {
+  background-color: #fff;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button.clickable {
+  width: 200px;
+  background-color: #6fc3ce;
+  border-radius: 5px;
+  margin-bottom: 50px;
+  padding:5px;
+  transition: all 2s;
+}
+button:hover {
+  background-color: #81c5ce;
+  transform: scale(1.1);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* background-color: #ddd; */
+  align-items: center;
+  width: 100vw;
+  padding: 10px 30px;
+}
+
+.items {
+  padding: 10px 30px;
+}
+h1 {
+  display:flex;
+  flex-wrap: wrap;
+}
+
+header > h1 {
+  color:#39847d;
+  transition:all 4s;
+}
+
+header > h1:hover {
+  transform: skewY(10deg);
+  font-size: 30px;
+}
+
+section > h1{
+  text-align: center;
+  transition:all 4s;
+  color:#39847d;
+}
+
+section > h1:hover {
+  transform: skewY(10deg);
+  font-size: 30px;
+}
+
+header {
+  display:flex;
+  flex-direction:row;
+  background-image:url("/image/mountain-landscape.jpg");
+  background-repeat: 3;
+  background-size: cover;
+  height: 40vh;
+  width:100vw;
+}
+
+nav {
+  width:100vw;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  width:100%;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #ea7ca1;
+  padding:10px;
+}
+
+ul > li {
+  font-size: 16px;
+  padding: 20px 60px;
+  color:#4c8a57;
+  list-style: none;
+  justify-content: space-around;
+  text-decoration: none;
+}
+
+a {
+  color:#4c8a57;
+  list-style: none;
+  text-decoration: none;
+  transition: all 2s;
+}
+
+a:hover {
+  color:#ddd;
+  transform:scale(1.1);
+  text-decoration: none;
+  font-size: 20px;
+  list-style: none;
+}
+
+#demo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 200px;
+  /*background-color: #6fc3ce;*/
+  background-color: #ea7ca1;
+  border-radius: 15px;
+  color: #246b23;
+  padding: 20px 30px;
+  margin: 10px;
+  transition: all 2s;
+}
+
+#demo:hover {
+transform:scale(1.1);
+/* background-color: #81c5ce; */
+background-color: #ea97b3;
+}
+
+.card {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow:2px 2px #3ad955;
+  border-radius: 15px;
+  margin:10px;
+  transition:all 2s;
+  margin-bottom: 10px;
+}
+
+.card:hover {
+  background-color: #94d6a0;
+  transform:scale(1.1);
+}
+
+.show_items {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  width:100vw;
+  margin:10px;
+  border: none;
+  color: #246b23;
+  padding:20px 30px;
+}
+
+aside {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:center;
+  align-items: center;
+}
+
+aside > p {
+  padding:20px 60px;
+  font-size: 16px;
+  color:#009688;
+  transition: all 2s;
+}
+
+aside > p:hover {
+  color:#ea7ca1;
+  font-size: 20px;
+  transform: scale(1.1);
+}
+
+footer {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width:100vw;
+  height:20vw;
+  margin-top:20px;
+  background-color: #94d6a0;
+  font-size: 14px;
+  font-family: fantasy;
+  color:#ea7ca1;
+  transition:all 2s;
+}
+
+footer:hover {
+transform:scale(1.1);
+}
+
+footer > p {
+  transition:all 4s;
+}
+
+footer > p:hover {
+  transform:skewY(10deg);
+  font-size: 18px;
+}
