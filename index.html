@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My HTML Page</title>
   <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" /> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" title="Cool stylesheet" href="style.css">
 </head>
 
@@ -14,46 +15,29 @@
   <header>
     <h1>Bit Coin Page</h1>
   </header>
-  <nav>
-    <ul>
-      <li><a href="#menu">Menu</a>
-        <select hidden>
-          <option>Market</option>
-          <option>Markets</option>
-        </select>
+  <nav class="navbar navbar-inverse">
+    <ul class="nav navbar-nav">
+      <li class="active" active><a href="#menu">Menu</a>
+        <ul class="dropdown-menu">
+          <li a href="#">Elapsed</li>
+          <li a href="#">Timestamp</li>
+        </ul>
       </li>
-      <li><a href="#search">Search</a></li>
-      <li><a href="#markets">Markets</a></li>
-      <select hidden>
-        <option selected><a href="#">Market</a></option>
-        <option><a href="#">Price</a></option>
-        <option><a href="#">Volume</a></option>
-      </select>
+
+      <li class="dropdown"><a href="#search">Search</a></li>
+      <li class="dropdown-toggle" data-toggle="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"
+          href="#markets">Markets</a></li>
+      <li><a class="dropdown-toggle" data-toggle="dropdown" href="#market">Market</a>
       </li>
-      <li><a href="#market">Market</a>
-        <select hidden>
-          <option><a href="bit_stamp" selected>Bitstamp</a></option>
-          <option><a href="bit_rex">Bittrex<< /a>
-          </option>
-          <option><a href="cex">Cex.io</a></option>
-          <option><a href="coin_base">Coinbase Pro</a></option>
-          <option><a href="exmo">Exmo</a></option>
-          <option><a href="hit_btc">Hitbtc</a></option>
-          <option><a href="cra_ken">Craken</a></option>
-          <option><a href="yo_bit">Yo Bit</a></option>
-        </select>
-      </li>
+
     </ul>
   </nav>
   <section>
     <h1>Bit Coin Data</h1>
     <div class="container">
-
       <div class="items hidden" id="bitCoinBody">
         <button class="clickable" onclick="fetchBitCoinPrice()">Load Bit Coin Data</button>
       </div>
-      <!-- <div id="root"></div> -->
-      <div id="demo"></div>
       <div class="show_items hidden"></div>
     </div>
   </section>
@@ -65,9 +49,8 @@
   </aside>
 
   <footer>
-    <p>A Simple implementation of the cryptonator API</p>
+    <p>A Simple implementation of the Messari Cryptonator API</p>
   </footer>
-
 </body>
 
 </html>
