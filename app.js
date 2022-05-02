@@ -83,6 +83,7 @@ card_17.classList.add("card-17");
 card_18.classList.add("card-18");
 card_19.classList.add("card-19");
 //Add classes to rest of elements
+arr.classList.add("arr");
 arr_0.classList.add("arr-0");
 arr;
 arr_1.classList.add("arr-1");
