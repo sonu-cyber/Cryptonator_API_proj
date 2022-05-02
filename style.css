@@ -159,103 +159,64 @@ a:hover {
 }
 /*All cards */
 
-.card-0 {
-  color: #91e233;
-  border: 3px solid #a9dd6d;
+.card-0,
+.card-10 {
+  color: #a18ebb;
+  border: 3px solid #a18ebb;
 }
 
-.card-1 {
+.card-1,
+.card-11 {
   color: #f5665b;
   border: 3px solid #f5665b;
 }
 
-.card-2 {
+.card-2,
+.card-12 {
   color: #9e7d7b;
   border: 3px solid #9e7d7b;
 }
 
-.card-3 {
+.card-3,
+.card-13 {
   color: #8e68d0;
   border: 3px solid #8e68d0;
 }
 
-.card-4 {
+.card-4,
+.card-14 {
   color: #92b767;
   border: 3px solid #92b767;
 }
 
-.card-5 {
+.card-5,
+.card-15 {
   color: #9575ce;
   border: 3px solid #9575ce;
 }
 
-.card-6 {
+.card-6,
+.card-16 {
   color: #6eaac5;
   border: 3px solid #6eaac5;
 }
 
-.card-7 {
+.card-7,
+.card-17 {
   color: #ceb467;
   border: 3px solid #ceb467;
 }
 
-.card-8 {
+.card-8,
+.card-18 {
   color: #ca8c75;
   border: 3px solid #ca8c75;
 }
 
-.card-9 {
-  color: #f5665b;
-  border: 3px solid #f5665b;
-}
-
-.card-10 {
+.card-10,
+.card-19 {
   color: #ceb467;
   border: 3px solid #ceb467;
-}
-
-.card-11 {
-  color: #8bc34a;
-  border: 3px solid #8bc34a;
-}
-
-.card-12 {
-  color: #a18ebb;
-  border: 3px solid #a18ebb;
-}
-.card-13 {
-  color: #91e233;
-  border: 3px solid #a9dd6d;
-}
-
-.card-14 {
-  color: #f5665b;
-  border: 3px solid #f5665b;
-}
-
-.card-15 {
-  color: #9e7d7b;
-  border: 3px solid #9e7d7b;
-}
-
-.card-16 {
-  color: #8e68d0;
-  border: 3px solid #8e68d0;
-}
-
-.card-17 {
-  color: #92b767;
-  border: 3px solid #92b767;
-}
-
-.card-18 {
-  color: #9575ce;
-  border: 3px solid #9575ce;
-}
-
-.card-19 {
-  color: #6eaac5;
-  border: 3px solid #6eaac5;
 }
 
 .card-0,
@@ -281,13 +242,13 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
   align-items: center;
   flex-wrap: wrap;
   width: 50vw;
   height: 35vh;
   padding: 10px;
   margin: 0.5rem 0;
-
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: bolder;
   border-radius: 7px;
@@ -295,10 +256,11 @@ a:hover {
   margin-bottom: 25px;
   transition: all 3s;
 }
-.arr {
+.arr,
+.arr-0 {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
   flex-wrap: wrap;
 }
 
@@ -448,6 +410,7 @@ a:hover {
   .card-18,
   .card-19 {
     font-size: 14px;
+    justify-content: left;
   }
   p {
     font-size: 8px;
@@ -490,6 +453,7 @@ a:hover {
   .card-18,
   .card-19 {
     font-size: 10px;
+    justify-content: left;
   }
   p {
     font-size: 2px;
@@ -576,7 +540,7 @@ footer > p {
   display: flex;
   justify-content: center;
   align-content: center;
-
+  flex-wrap: wrap;
   transition: all 4s;
   color: #ca235a;
   font-size: 18px;

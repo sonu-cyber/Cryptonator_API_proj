@@ -2,12 +2,11 @@
 const items = document.querySelector(".items");
 const show_items = document.querySelector(".show_items");
 const container = document.querySelector(".container");
-const data_demo = document.querySelector("#demo");
 
-const elapsed = document.createElement("p");
 const arr_data = document.createElement("p");
 const arr = document.createElement("p");
 const index = document.createElement("p");
+const elapsed = document.createElement("p");
 const timestamp = document.createElement("p");
 const slug = document.createElement("p");
 const symbol = document.createElement("p");
@@ -275,8 +274,11 @@ const fetchBitCoinPrice = async () => {
         //index ===1 ends
 
         //Append to cards
-        card_0.appendChild(elapsed);
-        card_0.appendChild(timestamp);
+
+        arr_0.appendChild(elapsed);
+        arr_0.appendChild(timestamp);
+        card_0.append(elapsed, timestamp);
+
         //Append index 1 data
         card_1.appendChild(arr_1);
         card_2.appendChild(arr_2);
